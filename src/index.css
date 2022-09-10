@@ -1,1 +1,25 @@
 /*estilos para todos los componentes*/
+.containerIconCart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    background-color: rgba(155, 155, 246, 0.672);
+    border-radius: 15px;
+    margin: 3px 15px 3px 0;
+}
+.iconCarrito{
+    height: 70px;
+    margin: 5px;
+}
+.divSpanNumberCart{
+    border-radius: 50px;
+    background-color: white;
+    width: 70px;
+}
+.SpanNumberCart{
+    font-size: 17px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+}
