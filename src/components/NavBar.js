@@ -12,12 +12,16 @@ const Navbar = () => {
          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
            <div className="navbar-nav">
              <a className="nav-link active" aria-current="page" href="/#">Home</a>
+             <a className="nav-link" href="/#">Todos los productos</a>
              <a className="nav-link" href="/#">Remeras</a>
              <a className="nav-link" href="/#">Buzos</a>
              <a className="nav-link" href="/#">Buzos sin capucha</a>
-             <a className="nav-link" href="/#">Todos los productos</a>
            </div>
          </div>
+         <div className="d-flex">
+              <a className="nav-link" href="/#">Login</a>
+              <a className="nav-link" href="/#">Register</a>
+             </div>
          </div>
          <CartWidget />
          </nav>
