@@ -1,25 +1,25 @@
 import { useState } from 'react';
 import '../index.css'
 function ItemCount() { 
-    const [rate, setRate] = useState(0);
+    const [rate, setRate] = useState(1);
     let stock = 10;
 
    const addProduct = () => {
     if(rate < stock){
         setRate(rate+1);
-        console.log(rate)
     }else{
         alert(`No hay stock, disponemos solo de ${stock} unidades. Disculpe las molestias`)
     }
    }
    const agregarCarrito = () => {
-    alert(`Se agrego al carrito ${rate} productos`)
-    setRate(0);
+    if(rate !== 0){
+        alert(`Se agrego al carrito ${rate} productos`)
+        setRate(1);
+    }
    }
    const removeProduct = () => {
     if(rate >= 1){
         setRate(rate-1);
-        console.log(rate)
     }else{
         alert("Pedido no valido, por favor ingrese valores positivos")
     }
