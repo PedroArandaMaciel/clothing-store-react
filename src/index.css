@@ -23,3 +23,36 @@
     display: flex;
     justify-content: center;
 }
+.componentCantAgregar{
+    height: 150px;
+    width: 200px;
+    background-color:rgba(128, 128, 128, 0.265);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerCantidadAgregada{
+    background-color: rgba(34, 57, 187, 0.493);
+    height: 35px;
+    width: 150px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+.btnCantidadAgregada{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    font-weight: bolder;
+}
+.spanCantidadAgregada{
+  font-weight: bolder;
+}
+.btnAgregarCarrito{
+    border: none;
+    color: blueviolet;
+}
