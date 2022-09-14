@@ -26,13 +26,11 @@
 .componentCantAgregar{
     height: 150px;
     width: 200px;
-    background-color:rgba(128, 128, 128, 0.265);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .containerCantidadAgregada{
-    background-color: rgba(34, 57, 187, 0.493);
     height: 35px;
     width: 150px;
     margin: 10px;
@@ -42,10 +40,11 @@
     border-radius: 10px;
 }
 .btnCantidadAgregada{
-    height: 25px;
-    width: 25px;
+    height: 35px;
+    width: 35px;
     display: flex;
     justify-content: center;
+    align-items: center;
     border: none;
     font-weight: bolder;
 }
@@ -54,5 +53,24 @@
 }
 .btnAgregarCarrito{
     border: none;
-    color: blueviolet;
+}
+.containerItems{
+    margin-right: 0;
+    justify-content: space-between;
+}
+.imgProducts{
+    height: 200px;
+    width: 250px;
+}
+.cardProduct{
+    width: 300px;
+    margin: 10px;
+}
+.divCardProduct{
+    display: flex;
+    align-items: center;
+}
+.divBtnCardProduc{
+    display: flex;
+    justify-content: center;
 }

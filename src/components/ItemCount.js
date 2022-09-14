@@ -15,6 +15,9 @@ function ItemCount() {
     if(rate !== 0){
         alert(`Se agrego al carrito ${rate} productos`)
         setRate(1);
+    }else{
+        alert("Cantidad no valida")
+        setRate(1);
     }
    }
    const removeProduct = () => {
@@ -26,14 +29,13 @@ function ItemCount() {
    }
     return (
       <div className='componentCantAgregar'>
-        <p>Buzo color negro</p>
         <div className='containerCantidadAgregada'>
-            <button onClick={removeProduct} className="btnCantidadAgregada">-</button>
-            <span className="spanCantidadAgregada">{rate}</span>
-            <button onClick={addProduct} className="btnCantidadAgregada">+</button>
+            <button onClick={removeProduct} className="btnCantidadAgregada btn btn-secondary">-</button>
+            <span className="btn btn-primary spanCantidadAgregada">{rate}</span>
+            <button onClick={addProduct} className="btnCantidadAgregada btn btn-secondary">+</button>
         </div>
         <div>
-            <button onClick={agregarCarrito} className='btnAgregarCarrito'>Agregar al Carrito</button>
+            <button onClick={agregarCarrito} className='btnAgregarCarrito btn btn-primary'>Agregar al Carrito</button>
         </div>
       </div>
     );

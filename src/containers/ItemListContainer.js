@@ -1,11 +1,13 @@
-import ItemCount from "./ItemCount";
+import ItemCount from "../components/ItemCount";
 import '../index.css'
+import ItemList from '../components/ItemList'
 
 const ItemListContainer = (props) => {
-    return(
+    return (
         <div>
             <p>{props.greeting}</p>
-            <ItemCount/>
+            <ItemCount />
+            <ItemList/>
         </div>
     )
 }
