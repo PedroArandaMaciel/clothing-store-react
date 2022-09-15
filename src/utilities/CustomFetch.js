@@ -10,5 +10,4 @@ let CustomFetch = (time, array) => {
         }, time)
     })
 }
-
 export default CustomFetch;

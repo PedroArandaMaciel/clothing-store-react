@@ -55,5 +55,4 @@ const productosDB = [
     }
     
 ]
-
 export default productosDB;
