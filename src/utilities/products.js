@@ -6,7 +6,8 @@ const productosDB = [
         talle: 'L',
         stock: '30',
         price: '4500',
-        imagen: 'https://dummyimage.com/200x250/000/fff'
+        imagen: 'https://dummyimage.com/200x250/000/fff',
+        descripcion: 'Buzo de algodon con capucha, de excelente calidad. Los productos son totalmente confeccionados por nosotros, utilizamos las mejores telas para dar a nuestros clientes la mejor calidad posible.'
     },
     {
         id: '2',
@@ -15,7 +16,8 @@ const productosDB = [
         talle: 'XL',
         stock: '50',
         price: '4500',
-        imagen: 'https://dummyimage.com/200x250/000/fff'
+        imagen: 'https://dummyimage.com/200x250/000/fff',
+        descripcion: 'Buzo de algodon con capucha, de excelente calidad. Los productos son totalmente confeccionados por nosotros, utilizamos las mejores telas para dar a nuestros clientes la mejor calidad posible.'
     },
     {
         id: '3',
@@ -24,7 +26,8 @@ const productosDB = [
         talle: 'L',
         stock: '20',
         price: '4500',
-        imagen: 'https://dummyimage.com/200x250/000/fff'
+        imagen: 'https://dummyimage.com/200x250/000/fff',
+        descripcion: 'Buzo de algodon con capucha, de excelente calidad. Los productos son totalmente confeccionados por nosotros, utilizamos las mejores telas para dar a nuestros clientes la mejor calidad posible.'
     },
     {
         id: '4',
@@ -33,7 +36,8 @@ const productosDB = [
         talle: 'XL',
         stock: '30',
         price: '4500',
-        imagen: 'https://dummyimage.com/200x250/000/fff'
+        imagen: 'https://dummyimage.com/200x250/000/fff',
+        descripcion: 'Buzo de algodon sin capucha, de excelente calidad. Los productos son totalmente confeccionados por nosotros, utilizamos las mejores telas para dar a nuestros clientes la mejor calidad posible.'
     },
     {
         id: '5',
@@ -42,7 +46,8 @@ const productosDB = [
         talle: 'XL',
         stock: '15',
         price: '4500',
-        imagen: 'https://dummyimage.com/200x250/000/fff'
+        imagen: 'https://dummyimage.com/200x250/000/fff',
+        descripcion: 'Buzo de algodon sin capucha, de excelente calidad. Los productos son totalmente confeccionados por nosotros, utilizamos las mejores telas para dar a nuestros clientes la mejor calidad posible.'
     },
     {
         id: '6',
@@ -51,7 +56,8 @@ const productosDB = [
         talle: 'L',
         stock: '23',
         price: '4500',
-        imagen: 'https://dummyimage.com/200x250/000/fff'
+        imagen: 'https://dummyimage.com/200x250/000/fff',
+        descripcion: 'Buzo de algodon sin capucha, de excelente calidad. Los productos son totalmente confeccionados por nosotros, utilizamos las mejores telas para dar a nuestros clientes la mejor calidad posible.'
     }
     
 ]
