@@ -67,7 +67,7 @@ const productosDB = [
     },
     {
         id: 7,
-        name: 'Remera Lisa',
+        name: 'Remera lisa',
         categoryId: 3,
         color: 'Rojo',
         talle: 'L',
@@ -78,7 +78,7 @@ const productosDB = [
     },
     {
         id: 8,
-        name: 'Remera Lisa',
+        name: 'Remera lisa',
         categoryId: 3,
         color: 'Blanco',
         talle: 'L',
@@ -89,7 +89,7 @@ const productosDB = [
     },
     {
         id: 9,
-        name: 'Remera Lisa',
+        name: 'Remera lisa',
         categoryId: 3,
         color: 'Negro',
         talle: 'xL',
@@ -97,7 +97,6 @@ const productosDB = [
         price: 3000,
         imagen: 'https://dummyimage.com/200x250/000/fff',
         descripcion: 'Remera de algodon de excelente calidad. No se estira ni destiñe con los lavados. Los productos son totalmente confeccionados por nosotros, utilizamos las mejores telas para dar a nuestros clientes la mejor calidad posible.'
-    }
-    
+    }  
 ]
 export default productosDB;

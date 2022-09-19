@@ -1,5 +1,6 @@
 import ItemCount from "./ItemCount";
-function Item({producto}) {
+import { Link } from "react-router-dom";
+function Item({ producto }) {
     return (
         <div className="col cardProduct">
             <div className="card h-100 divCardProduct">
@@ -9,7 +10,7 @@ function Item({producto}) {
                     <p className="card-text">Talle: {producto.talle}</p>
                     <p className="card-text">Precio: ${producto.price}</p>
                     <div className="divBtnCardProduc">
-                        <button className="btn btn-info">Ver detalle del producto</button>
+                        <Link to={"/item/" + producto.id} className="btn btn-info">Ver detalle del producto</Link>
                     </div>
                     <div className="card-footer">Con {producto.stock} unidades en Stock</div>
                 </div>

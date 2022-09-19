@@ -8,7 +8,7 @@ const ItemDetail = ({ item }) => {
                 </div>
                 <div className="col-4 p-2">
                     <div>
-                        <h4>{item.name}</h4>
+                        <h4>{item.name} color {item.color}</h4>
                     </div>
                     <div>
                         <h4>${item.price}</h4>

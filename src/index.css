@@ -1,4 +1,13 @@
 /*estilos para todos los componentes*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none; 
+}
+.row{
+    --bs-gutter-y: 0px;
+}
 .containerIconCart{
     padding: 5px;
     background-color: rgba(155, 155, 246, 0.672);
@@ -54,7 +63,7 @@
 }
 .containerItems{
     margin-right: 0;
-    justify-content: space-between;
+    justify-content: center;
 }
 .imgProducts{
     height: 200px;
@@ -67,6 +76,8 @@
 .divCardProduct{
     display: flex;
     align-items: center;
+    padding: 5px 5px 10px 5px;
+    color: black;
 }
 .divBtnCardProduc{
     display: flex;
