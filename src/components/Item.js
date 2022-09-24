@@ -1,7 +1,6 @@
 import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
 function Item({ producto }) {
-    console.log(producto.stock)
     return (
         <div className="col cardProduct">
             <div className="card h-100 divCardProduct">

@@ -19,11 +19,10 @@ function ItemCount({ stock, initial, onAdd }) {
     }
     const agregarCarrito = () => {
         if (rate !== 0) {
-            alert(`Se agrego al carrito ${rate} productos`)
             setRate(1);
             onAdd(rate)  //seteo el estado de mi otro componente con el estado del hijo
         } else {
-            alert("Cantidad no valida")
+            console.log("Cantidad no valida")
             setRate(1);
         }
     }
