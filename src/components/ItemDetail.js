@@ -5,7 +5,7 @@ import ItemCount from "./ItemCount"
 const ItemDetail = ({ item }) => {
     const [itemCount, setItemCount] = useState(0);
     const { addItem } = useContext(CartContext)
-    
+
     const onAdd = (cantidad) => {
         setItemCount(cantidad)
         addItem(item, cantidad)
@@ -28,13 +28,11 @@ const ItemDetail = ({ item }) => {
                     </div>
                 </div>
                 <div className="col-4 d-flex align-items-end">
-
                     {
                         itemCount === 0
                             ? <ItemCount initial={itemCount} stock={item.stock} inCard={item.inCard} onAdd={onAdd} />
-                            : <Link to="/cart"><button className="btn btn-dark">Revisar en carrito</button></Link>
+                            : <Link to="/cart"><button className="btn btn-dark">Terminar mi compra</button></Link>
                     }
-
                 </div>
                 <div className="col-12">
                     <p className="parrafoStockDetail">Contamos con un stock de {item.stock} unidades</p>

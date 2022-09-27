@@ -28,9 +28,16 @@ const CartContextProvider = ({ children }) => {
         }
     }
     const removeItem = (itemId) => setCartList(cartList.filter((item) => item.id !== itemId))
-
+    const cantItems = () => {
+        let index = cartList.map(item => item.cantidadSeleccionada)
+        return index.reduce((valorPrevio, valorActual) => valorPrevio + valorActual, 0)
+    }
+    const calcularPrecioTotal = () => {
+        let index = cartList.map(item => item.price * item.cantidadSeleccionada)
+        return index.reduce((valorPrevio, valorActual) => valorPrevio + valorActual, 0)
+    }
     return (
-        <CartContext.Provider value={{ cartList, addItem, clear, removeItem }} >
+        <CartContext.Provider value={{ cartList, addItem, clear, removeItem, cantItems, calcularPrecioTotal }} >
             {children}
         </CartContext.Provider>
     )
