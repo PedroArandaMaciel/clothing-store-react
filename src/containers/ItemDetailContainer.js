@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import CustomFetch from "../utilities/CustomFetch";
-import productosDB from "../utilities/products";
 import ItemDetail from "../components/ItemDetail";
 import spinnLoading from "../components/SpinnLoading";
 import { useParams } from "react-router-dom";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from '../utilities/fireBaseConfig';
 const ItemDetailContainer = () => {
     const [dato, setDato] = useState({})
     const [loading, setLoading] = useState(false)
@@ -11,10 +11,13 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
         setLoading(true)
-        CustomFetch(2000, productosDB.find(item => item.id == id))
-            .then(result => setDato(result))
-            .catch(err => console.log(err))
-            .finally(() => setLoading(false))
+        const docFetch = async () => {
+            const docRef = doc(db, "products", id);
+            const docSnap = await getDoc(docRef);
+            setDato(docSnap.data())
+            setLoading(false)
+        }
+        docFetch()
     }, [id]);
 
     return (
