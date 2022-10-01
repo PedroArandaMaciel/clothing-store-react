@@ -14,12 +14,15 @@ const ItemDetailContainer = () => {
         const docFetch = async () => {
             const docRef = doc(db, "products", id);
             const docSnap = await getDoc(docRef);
-            setDato(docSnap.data())
+            const itemFromFirestore = ({
+                id: docSnap.id,
+                ...docSnap.data()
+            })
+            setDato(itemFromFirestore)
             setLoading(false)
         }
         docFetch()
     }, [id]);
-
     return (
         <div className="divContainerItem">
             {loading ? <div className="centrarSpinn">{spinnLoading()}</div> : <ItemDetail item={dato} />}
