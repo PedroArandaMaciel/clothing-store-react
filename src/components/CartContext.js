@@ -7,14 +7,19 @@ const CartContextProvider = ({ children }) => {
     const addItem = (product, cantidad) => {
         if (!isInCart(product.id)) {
             console.log(`Se agrego al carrito ${cantidad} productos`)
-            product.cantidadSeleccionada = cantidad
+            product = {                                     //se genera nuevo obj para agregar nueva propiedad
+                ...product, 
+                cantidad: cantidad
+            }
             setCartList([
                 ...cartList,
                 product
             ])
         } else {
-            console.log(`Producto ya en carrito, se agrego ${cantidad} extra`)
-            product.cantidadSeleccionada += cantidad
+            alert(`Producto ya en carrito, se agrego ${cantidad} extra`) 
+            const p = cartList.find(item => item.id === product.id)  //buscar el obj con mismo id para editar su cantidad nueva
+            p.cantidad += cantidad
+            setCartList([...cartList])
         }
     }
     const clear = () => {
@@ -29,11 +34,11 @@ const CartContextProvider = ({ children }) => {
     }
     const removeItem = (itemId) => setCartList(cartList.filter((item) => item.id !== itemId))
     const cantItems = () => {
-        let index = cartList.map(item => item.cantidadSeleccionada)
+        let index = cartList.map(item => item.cantidad)
         return index.reduce((valorPrevio, valorActual) => valorPrevio + valorActual, 0)
     }
     const calcularPrecioTotal = () => {
-        let index = cartList.map(item => item.price * item.cantidadSeleccionada)
+        let index = cartList.map(item => item.price * item.cantidad)
         return index.reduce((valorPrevio, valorActual) => valorPrevio + valorActual, 0)
     }
     return (

@@ -30,7 +30,7 @@ const ItemDetail = ({ item }) => {
                 <div className="col-4 d-flex align-items-end">
                     {
                         itemCount === 0
-                            ? <ItemCount initial={itemCount} stock={item.stock} inCard={item.inCard} onAdd={onAdd} />
+                            ? <ItemCount initial={1} stock={item.stock} inCard={item.inCard} onAdd={onAdd} />
                             : <Link to="/cart"><button className="btn btn-dark">Terminar mi compra</button></Link>
                     }
                 </div>

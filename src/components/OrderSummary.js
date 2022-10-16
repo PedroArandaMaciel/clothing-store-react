@@ -10,7 +10,7 @@ const OrderSummary = () => {
             id: item.id,
             price: item.price,
             title: item.name,
-            quantity: item.cantidadSeleccionada
+            quantity: item.cantidad
         }))
 
         let order = {
@@ -29,11 +29,11 @@ const OrderSummary = () => {
         cartList.forEach(async (item) => {
             const itemRef = doc(db, "products", item.id)
             await updateDoc(itemRef, {
-                stock: increment(-item.cantidadSeleccionada)
+                stock: increment(-item.cantidad)
             })
         });
         clear()
-        alert(`Tu orden fuie creada! ID: ${newOrderRef.id}`)
+        alert(`Tu orden fue creada! ID: ${newOrderRef.id}`)
     }
     return (
         <div>

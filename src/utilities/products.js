@@ -1,7 +1,6 @@
 const productosDB = [
     {
         id: 1,
-        cantidadSeleccionada: 0,
         name: 'Buzo con capucha',
         categoryId: 1,
         color: 'Rojo',
@@ -13,7 +12,6 @@ const productosDB = [
     },
     {
         id: 2,
-        cantidadSeleccionada: 0,
         name: 'Buzo con capucha',
         categoryId: 1,
         color: 'Blanco',
@@ -25,7 +23,6 @@ const productosDB = [
     },
     {
         id: 3,
-        cantidadSeleccionada: 0,
         name: 'Buzo con capucha',
         categoryId: 1,
         color: 'Azul',
@@ -37,7 +34,6 @@ const productosDB = [
     },
     {
         id: 4,
-        cantidadSeleccionada: 0,
         name: 'Buzo sin capucha',
         categoryId: 2,
         color: 'Blanco',
@@ -49,7 +45,6 @@ const productosDB = [
     },
     {
         id: 5,
-        cantidadSeleccionada: 0,
         name: 'Buzo sin capucha',
         categoryId: 2,
         color: 'Negro',
@@ -61,7 +56,6 @@ const productosDB = [
     },
     {
         id: 6,
-        cantidadSeleccionada: 0,
         name: 'Buzo sin capucha',
         categoryId: 2,
         color: 'Rojo',
@@ -73,7 +67,6 @@ const productosDB = [
     },
     {
         id: 7,
-        cantidadSeleccionada: 0,
         name: 'Remera lisa',
         categoryId: 3,
         color: 'Rojo',
@@ -85,7 +78,6 @@ const productosDB = [
     },
     {
         id: 8,
-        cantidadSeleccionada: 0,
         name: 'Remera lisa',
         categoryId: 3,
         color: 'Blanco',
@@ -97,7 +89,6 @@ const productosDB = [
     },
     {
         id: 9,
-        cantidadSeleccionada: 0,
         name: 'Remera lisa',
         categoryId: 3,
         color: 'Negro',
